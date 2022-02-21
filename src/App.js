@@ -1,5 +1,6 @@
 import Counter from './components/Counter/Counter';
 import Auth from './components/Auth/Auth'
+import UserProfile from './components/UserProfile/UserProfile';
 import Header from './components/Header/Header'
 import { useSelector } from 'react-redux';
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header />
       {!isLogged && <Auth />}
+      {isLogged && <UserProfile />}
       {isLogged && <Counter />}
     </>
   );
