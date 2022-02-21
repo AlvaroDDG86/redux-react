@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import classes from './Auth.module.css';
-import { authActuons } from '../store/slices/auth';
+import { authActuons } from '../../store/slices/auth';
 import { useDispatch } from 'react-redux';
 
 const Auth = () => {

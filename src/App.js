@@ -1,6 +1,6 @@
-import Counter from './components/Counter';
-import Auth from './components/Auth'
-import Header from './components/Header'
+import Counter from './components/Counter/Counter';
+import Auth from './components/Auth/Auth'
+import Header from './components/Header/Header'
 import { useSelector } from 'react-redux';
 
 
