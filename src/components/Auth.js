@@ -1,7 +1,10 @@
 import { useRef } from 'react';
 import classes from './Auth.module.css';
+import { authActuons } from '../store/slices/auth';
+import { useDispatch } from 'react-redux';
 
 const Auth = () => {
+  const dispatch = useDispatch()
   const emailInputRef = useRef()
   const passwordInputRef = useRef()
 
@@ -13,6 +16,7 @@ const Auth = () => {
       email,
       password
     })
+    dispatch(authActuons.login())
     emailInputRef.current.value = ''
     passwordInputRef.current.value = ''
   }
